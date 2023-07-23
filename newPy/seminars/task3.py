@@ -107,6 +107,7 @@
 # или не совпадают в ваших решениях.
 
 # user_input = input('Введите текст: ')
+
 user_input = 'hello worlds just do it'
 result = {}
 for attr in user_input:
