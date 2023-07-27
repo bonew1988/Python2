@@ -9,6 +9,15 @@ from typing import List, Tuple
 
 LIMIT = 10
 
+
+def get_most_common_words(text: str, n: int = LIMIT) -> List[Tuple[str, int]]:
+    translator = str.maketrans('', '', string.punctuation)
+    cleaned_text = text.translate(translator).lower()
+    words = cleaned_text.split()
+    word_counter = Counter(words)
+    return word_counter.most_common(n)
+
+
 text = """"
 Позитивное мышление  концепция, применяемая на семинарах по мотивационному развитию личности, 
 а также в соответствующей литературе. Синонимы  «новое мышление», «правильное мышление», 
@@ -29,15 +38,6 @@ text = """"
 к различным наборам технологий, близких по духу к практикам лайфхакинга и призванных привнести 
 конструктивную и креативную составляющую в рабочие и деловые процессы.
 """
-
-
-def get_most_common_words(text: str, n: int = LIMIT) -> List[Tuple[str, int]]:
-    translator = str.maketrans('', '', string.punctuation)
-    cleaned_text = text.translate(translator).lower()
-    words = cleaned_text.split()
-    word_counter = Counter(words)
-    return word_counter.most_common(n)
-
 
 result = sorted(get_most_common_words(text), key=lambda x: x[1], reverse=True)
 for word, count_W in result[:LIMIT]:
