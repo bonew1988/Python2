@@ -9,5 +9,5 @@ def fibonacci_generator() -> None:
 
 
 fib = fibonacci_generator()
-for _ in range(10):
+for _ in range(1000):
     print(next(fib))
