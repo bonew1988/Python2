@@ -5,12 +5,12 @@ import string
 __all__ = ['create_random_files']
 
 
-def generate_random_filename(length):
+def generate_random_filename(length: str) -> str:
     letters = string.ascii_letters
     return ''.join(random.choice(letters) for _ in range(length))
 
 
-def create_random_files(directory, num_files, name_list, extensions):
+def create_random_files(directory: str, num_files: int, name_list: str, extensions: str) -> None:
     if not os.path.exists(directory):
         os.makedirs(directory)
 

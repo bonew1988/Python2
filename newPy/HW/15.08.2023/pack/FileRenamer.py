@@ -3,7 +3,7 @@ import os
 __all__ = ['rename_files']
 
 
-def rename_files(wanted_name, count_nums, extension_old, extension_new, diapazon, directory="."):
+def rename_files(wanted_name: str, count_nums: int, extension_old: str, extension_new: str, diapazon: list[int], directory: str = ".") -> None:
     files_to_rename = [f for f in os.listdir(
         directory) if f.endswith(extension_old)]
     files_to_rename.sort()
