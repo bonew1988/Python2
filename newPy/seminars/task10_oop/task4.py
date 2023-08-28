@@ -74,9 +74,3 @@ if __name__ == "__main__":
     print(kt1)
     kt1.birthday()
     print(kt1)
-
-# newtest
-# newtest
-# newtest
-# newtest
-# newtest
