@@ -6,11 +6,11 @@
 # окружности и её площадь.
 
 
-import math
+from math import pi
 
 
 class Circle:
-    _pi = math.pi
+    _pi = pi
 
     def __init__(self, radius) -> None:
         self.radius = radius
@@ -21,4 +21,7 @@ class Circle:
     def calc_area(self):
         return self._pi * self. radius ** 2
 
-# test# test# test
+
+if __name__ == '__main__':
+    c1 = Circle(radius=15)
+    print(f'{c1.calc_len()} {c1.calc_area()}')
