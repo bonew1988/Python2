@@ -5,14 +5,17 @@
 # Декоратор, запускающий функцию нахождения корней квадратного уравнения с каждой тройкой чисел из csv файла.
 # Декоратор, сохраняющий переданные параметры и результаты работы функции в json файл.
 
+
 import csv
 import json
 import random
 import math
+from typing import List, Tuple, Optional
 
 
 def save_to_json(func):
     '''Декоратор для сохранения параметров и результатов работы функции в json файл'''
+
     def wrapper(*args, **kwargs):
         result = func(*args, **kwargs)
         data = {
@@ -27,7 +30,8 @@ def save_to_json(func):
 
 def solve_square_equation(func):
     '''Декоратор для нахождения корней квадратного уравнения с каждой тройкой чисел'''
-    def wrapper(numbers):
+
+    def wrapper(numbers: List[Tuple[int, int, int]]) -> List[Optional[Tuple[Optional[float], Optional[float]]]]:
         results = []
         for a, b, c in numbers:
             discriminant = b**2 - 4*a*c
@@ -41,8 +45,9 @@ def solve_square_equation(func):
     return wrapper
 
 
-def generate_csv(filename, num_rows):
+def generate_csv(filename: str, num_rows: int):
     '''Генерация CSV файла'''
+
     with open(filename, 'w', newline='') as csvfile:
         csv_writer = csv.writer(csvfile)
         for _ in range(num_rows):
@@ -50,8 +55,9 @@ def generate_csv(filename, num_rows):
             csv_writer.writerow(row)
 
 
-def read_csv(filename):
+def read_csv(filename: str) -> List[Tuple[int, int, int]]:
     '''Функция для чтения CSV файла и возврата списка троек чисел'''
+
     numbers = []
     with open(filename, 'r') as csvfile:
         csv_reader = csv.reader(csvfile)
@@ -63,13 +69,15 @@ def read_csv(filename):
 
 @save_to_json
 @solve_square_equation
-def find_roots(numbers):
+def find_roots(numbers: List[Tuple[int, int, int]]) -> List[Optional[Tuple[Optional[float], Optional[float]]]]:
     return numbers
 
 
 if __name__ == "__main__":
     csv_filename = 'data.csv'
     generate_csv(csv_filename, num_rows=100)
+
     numbers = read_csv(csv_filename)
     roots = find_roots(numbers)
+
     print("Roots:", roots)
