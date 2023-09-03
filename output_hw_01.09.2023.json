@@ -1,0 +1,290 @@
+[
+    {
+        "name": "task1.py",
+        "parent": "03.08.2023",
+        "type": "file",
+        "size": 704
+    },
+    {
+        "name": "task2.py",
+        "parent": "03.08.2023",
+        "type": "file",
+        "size": 813
+    },
+    {
+        "name": "task3.py",
+        "parent": "03.08.2023",
+        "type": "file",
+        "size": 292
+    },
+    {
+        "name": "task1.py",
+        "parent": "26.07.2023",
+        "type": "file",
+        "size": 485
+    },
+    {
+        "name": "task2.py",
+        "parent": "26.07.2023",
+        "type": "file",
+        "size": 4283
+    },
+    {
+        "name": "task4.py",
+        "parent": "26.07.2023",
+        "type": "file",
+        "size": 1146
+    },
+    {
+        "name": "task3.py",
+        "parent": "26.07.2023",
+        "type": "file",
+        "size": 1719
+    },
+    {
+        "name": "task.py",
+        "parent": "30.08.2023",
+        "type": "file",
+        "size": 3000
+    },
+    {
+        "name": "task1.py",
+        "parent": "30.07.2023",
+        "type": "file",
+        "size": 555
+    },
+    {
+        "name": "task2.py",
+        "parent": "30.07.2023",
+        "type": "file",
+        "size": 1008
+    },
+    {
+        "name": "task3.py",
+        "parent": "30.07.2023",
+        "type": "file",
+        "size": 3184
+    },
+    {
+        "name": "srial.py",
+        "parent": "01.09.2023",
+        "type": "file",
+        "size": 2742
+    },
+    {
+        "name": "factory.py",
+        "parent": "01.09.2023",
+        "type": "file",
+        "size": 2242
+    },
+    {
+        "name": "seminar_task.cpython-310.pyc",
+        "parent": "__pycache__",
+        "type": "file",
+        "size": 2963
+    },
+    {
+        "name": "main.py",
+        "parent": "15.08.2023",
+        "type": "file",
+        "size": 549
+    },
+    {
+        "name": "task1.py",
+        "parent": "pack",
+        "type": "file",
+        "size": 859
+    },
+    {
+        "name": "task2.py",
+        "parent": "pack",
+        "type": "file",
+        "size": 873
+    },
+    {
+        "name": "task4.py",
+        "parent": "pack",
+        "type": "file",
+        "size": 1800
+    },
+    {
+        "name": "task6.py",
+        "parent": "pack",
+        "type": "file",
+        "size": 873
+    },
+    {
+        "name": "FileRenamer.py",
+        "parent": "pack",
+        "type": "file",
+        "size": 806
+    },
+    {
+        "name": "FileGenerator.py",
+        "parent": "pack",
+        "type": "file",
+        "size": 793
+    },
+    {
+        "name": "task5.py",
+        "parent": "pack",
+        "type": "file",
+        "size": 1152
+    },
+    {
+        "name": "task3.py",
+        "parent": "pack",
+        "type": "file",
+        "size": 2378
+    },
+    {
+        "name": "__init__.py",
+        "parent": "pack",
+        "type": "file",
+        "size": 97
+    },
+    {
+        "name": "mainchess.py",
+        "parent": "08.08.2023",
+        "type": "file",
+        "size": 744
+    },
+    {
+        "name": "main.py",
+        "parent": "08.08.2023",
+        "type": "file",
+        "size": 315
+    },
+    {
+        "name": "portfolio.py",
+        "parent": "portfolio",
+        "type": "file",
+        "size": 1388
+    },
+    {
+        "name": "__init__.py",
+        "parent": "portfolio",
+        "type": "file",
+        "size": 24
+    },
+    {
+        "name": "chess.py",
+        "parent": "chess",
+        "type": "file",
+        "size": 1047
+    },
+    {
+        "name": "__init__.py",
+        "parent": "chess",
+        "type": "file",
+        "size": 19
+    },
+    {
+        "name": "task1.py",
+        "parent": "23.07.2023",
+        "type": "file",
+        "size": 909
+    },
+    {
+        "name": "task2.py",
+        "parent": "23.07.2023",
+        "type": "file",
+        "size": 2141
+    },
+    {
+        "name": "task1.py",
+        "parent": "15.07.2023",
+        "type": "file",
+        "size": 1458
+    },
+    {
+        "name": "task2.py",
+        "parent": "15.07.2023",
+        "type": "file",
+        "size": 1237
+    },
+    {
+        "name": "seminar_tasks.py",
+        "parent": "15.07.2023",
+        "type": "file",
+        "size": 3488
+    },
+    {
+        "name": "task.py",
+        "parent": "24.08.2023",
+        "type": "file",
+        "size": 144
+    },
+    {
+        "name": "task1.py",
+        "parent": "my_source",
+        "type": "file",
+        "size": 949
+    },
+    {
+        "name": "task2.py",
+        "parent": "my_source",
+        "type": "file",
+        "size": 1726
+    },
+    {
+        "name": "task4.py",
+        "parent": "my_source",
+        "type": "file",
+        "size": 1231
+    },
+    {
+        "name": "task3.py",
+        "parent": "my_source",
+        "type": "file",
+        "size": 1458
+    },
+    {
+        "name": "task_HW.py",
+        "parent": "my_source",
+        "type": "file",
+        "size": 3107
+    },
+    {
+        "name": "__init__.py",
+        "parent": "my_source",
+        "type": "file",
+        "size": 58
+    },
+    {
+        "name": "task1.cpython-310.pyc",
+        "parent": "__pycache__",
+        "type": "file",
+        "size": 870
+    },
+    {
+        "name": "__init__.cpython-310.pyc",
+        "parent": "__pycache__",
+        "type": "file",
+        "size": 240
+    },
+    {
+        "name": "task2.cpython-310.pyc",
+        "parent": "__pycache__",
+        "type": "file",
+        "size": 1277
+    },
+    {
+        "name": "task_HW.cpython-310.pyc",
+        "parent": "__pycache__",
+        "type": "file",
+        "size": 2657
+    },
+    {
+        "name": "task3.cpython-310.pyc",
+        "parent": "__pycache__",
+        "type": "file",
+        "size": 1434
+    },
+    {
+        "name": "task4.cpython-310.pyc",
+        "parent": "__pycache__",
+        "type": "file",
+        "size": 1086
+    }
+]
