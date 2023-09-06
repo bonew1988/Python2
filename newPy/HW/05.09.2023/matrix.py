@@ -46,11 +46,11 @@ class Matrix:
 
 
 if __name__ == '__main__':
-    matrix1 = Matrix(randint(2, 4), randint(2, 4))
+    matrix1 = Matrix(2, 2)
     matrix1.data = numpy.array([[randint(1, 100), randint(1, 100)], [
                                randint(1, 100), randint(1, 100)]])
 
-    matrix2 = Matrix(randint(2, 4), randint(2, 4))
+    matrix2 = Matrix(2, 2)
     matrix2.data = numpy.array([[randint(1, 100), randint(1, 100)], [
                                randint(1, 100), randint(1, 100)]])
 
