@@ -59,7 +59,7 @@ class User:
 
     def __eq__(self, other) -> bool:
         return self.user_name == other.user_name and self.__user_id == other.__user_id
-    
+
     def __hash__(self) -> int:
         return int(self.__user_id)
 
@@ -94,7 +94,6 @@ class Project:
 if __name__ == "__main__":
     proj = Project()
     proj.enter(id=123456, name="Vlad")
-    
+
     proj.add_user(id=159366, level=4, name='Asat')
     print(proj.users)
-    
