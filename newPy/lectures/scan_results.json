@@ -1,5 +1,30 @@
 [
     {
+        "ip_address": "192.168.95.10",
+        "open_ports": [
+            22,
+            111,
+            3128
+        ],
+        "services": {
+            "22": {
+                "name": "ssh",
+                "product": "",
+                "version": ""
+            },
+            "111": {
+                "name": "rpcbind",
+                "product": "",
+                "version": ""
+            },
+            "3128": {
+                "name": "squid-http",
+                "product": "",
+                "version": ""
+            }
+        }
+    },
+    {
         "ip_address": "192.168.95.11",
         "open_ports": [],
         "services": {}
@@ -88,67 +113,6 @@
             },
             "6000": {
                 "name": "X11",
-                "product": "",
-                "version": ""
-            }
-        }
-    },
-    {
-        "ip_address": "192.168.95.21",
-        "open_ports": [],
-        "services": {}
-    },
-    {
-        "ip_address": "192.168.95.22",
-        "open_ports": [
-            22
-        ],
-        "services": {
-            "22": {
-                "name": "ssh",
-                "product": "",
-                "version": ""
-            }
-        }
-    },
-    {
-        "ip_address": "192.168.95.23",
-        "open_ports": [
-            8008,
-            8009,
-            8443
-        ],
-        "services": {
-            "8008": {
-                "name": "http",
-                "product": "",
-                "version": ""
-            },
-            "8009": {
-                "name": "ajp13",
-                "product": "",
-                "version": ""
-            },
-            "8443": {
-                "name": "https-alt",
-                "product": "",
-                "version": ""
-            }
-        }
-    },
-    {
-        "ip_address": "192.168.95.24",
-        "open_ports": [],
-        "services": {}
-    },
-    {
-        "ip_address": "192.168.95.25",
-        "open_ports": [
-            3389
-        ],
-        "services": {
-            "3389": {
-                "name": "ms-wbt-server",
                 "product": "",
                 "version": ""
             }

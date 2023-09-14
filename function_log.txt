@@ -1,0 +1,4 @@
+2023-09-14 20:36:50,308 - INFO: Calling function 'add' with arguments: (5, 3), {}
+2023-09-14 20:36:50,308 - INFO: Function 'add' returned result: 8
+2023-09-14 20:36:50,308 - INFO: Calling function 'subtract' with arguments: (10, 4), {}
+2023-09-14 20:36:50,308 - INFO: Function 'subtract' returned result: 6
