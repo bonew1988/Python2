@@ -6,7 +6,6 @@
 # операций сравнения
 
 
-
 class Rectangle:
     def __init__(self,
                  length_cm: float,

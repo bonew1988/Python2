@@ -1,28 +1,15 @@
-import os
-import shutil
-from datetime import datetime
+class Dushnila:
+    def __init__(self, dushnila):
+        self.dushnila = dushnila
 
-# Путь к исходной папке
-source_folder = '/home/bonew/Рабочий стол/newPY/Python2/newPy'
+    def talk(self):
+        if 3389 in self.dushnila:
+            print('А как же константы выводить отдельно? if 3389 in open_ports:')
+        else:
+            print('Порт 3389 не найден в списке open_ports.')
 
-# Путь к новой папке, куда будут скопированы файлы
-destination_folder = '/home/bonew/Рабочий стол/newPY/Python2/new!!!!!'
 
-# Получаем список всех файлов и подпапок в исходной папке
-for root, dirs, files in os.walk(source_folder):
-    for file_name in files:
-        source_file_path = os.path.join(root, file_name)
-
-        # Получаем дату создания файла
-        creation_time = os.path.getctime(source_file_path)
-        creation_date = datetime.utcfromtimestamp(creation_time).strftime('%Y-%m-%d')
-
-        # Создаем папку с именем даты, если её нет
-        date_folder = os.path.join(destination_folder, creation_date)
-        os.makedirs(date_folder, exist_ok=True)
-
-        # Копируем файл в соответствующую папку
-        destination_file_path = os.path.join(date_folder, file_name)
-        shutil.copy2(source_file_path, destination_file_path)
-
-print("Файлы успешно скопированы и разложены по папкам с именем даты создания.")
+# Создаем экземпляр класса с передачей списка open_ports
+open_ports = [80, 443, 22]
+dima = Dushnila(open_ports)
+dima.talk()
