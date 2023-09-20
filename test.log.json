@@ -1,0 +1,180 @@
+[
+    {
+        "ip_address": "192.168.95.1",
+        "open_ports": [
+            53,
+            80,
+            2000
+        ],
+        "services": {
+            "53": {
+                "name": "domain",
+                "product": "",
+                "version": ""
+            },
+            "80": {
+                "name": "http",
+                "product": "",
+                "version": ""
+            },
+            "2000": {
+                "name": "cisco-sccp",
+                "product": "",
+                "version": ""
+            }
+        }
+    },
+    {
+        "ip_address": "192.168.95.2",
+        "open_ports": [
+            53,
+            2000
+        ],
+        "services": {
+            "53": {
+                "name": "domain",
+                "product": "",
+                "version": ""
+            },
+            "2000": {
+                "name": "cisco-sccp",
+                "product": "",
+                "version": ""
+            }
+        }
+    },
+    {
+        "ip_address": "192.168.95.3",
+        "open_ports": [
+            22,
+            443,
+            1723,
+            2000
+        ],
+        "services": {
+            "22": {
+                "name": "ssh",
+                "product": "",
+                "version": ""
+            },
+            "443": {
+                "name": "https",
+                "product": "",
+                "version": ""
+            },
+            "1723": {
+                "name": "pptp",
+                "product": "",
+                "version": ""
+            },
+            "2000": {
+                "name": "cisco-sccp",
+                "product": "",
+                "version": ""
+            }
+        }
+    },
+    {
+        "ip_address": "192.168.95.4",
+        "open_ports": [
+            53,
+            2000
+        ],
+        "services": {
+            "53": {
+                "name": "domain",
+                "product": "",
+                "version": ""
+            },
+            "2000": {
+                "name": "cisco-sccp",
+                "product": "",
+                "version": ""
+            }
+        }
+    },
+    {
+        "ip_address": "192.168.95.5",
+        "open_ports": [],
+        "services": {}
+    },
+    {
+        "ip_address": "192.168.95.6",
+        "open_ports": [],
+        "services": {}
+    },
+    {
+        "ip_address": "192.168.95.7",
+        "open_ports": [
+            80,
+            443
+        ],
+        "services": {
+            "80": {
+                "name": "http",
+                "product": "",
+                "version": ""
+            },
+            "443": {
+                "name": "https",
+                "product": "",
+                "version": ""
+            }
+        }
+    },
+    {
+        "ip_address": "192.168.95.8",
+        "open_ports": [
+            22,
+            53,
+            2000
+        ],
+        "services": {
+            "22": {
+                "name": "ssh",
+                "product": "",
+                "version": ""
+            },
+            "53": {
+                "name": "domain",
+                "product": "",
+                "version": ""
+            },
+            "2000": {
+                "name": "cisco-sccp",
+                "product": "",
+                "version": ""
+            }
+        }
+    },
+    {
+        "ip_address": "192.168.95.9",
+        "open_ports": [],
+        "services": {}
+    },
+    {
+        "ip_address": "192.168.95.10",
+        "open_ports": [
+            22,
+            111,
+            3128
+        ],
+        "services": {
+            "22": {
+                "name": "ssh",
+                "product": "",
+                "version": ""
+            },
+            "111": {
+                "name": "rpcbind",
+                "product": "",
+                "version": ""
+            },
+            "3128": {
+                "name": "squid-http",
+                "product": "",
+                "version": ""
+            }
+        }
+    }
+]

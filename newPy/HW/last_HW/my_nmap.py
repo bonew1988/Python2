@@ -2,9 +2,9 @@ import argparse
 import nmap
 import json
 import ipaddress
+import pandas as pd
 import logging
 import paramiko
-import pandas as pd
 from tqdm import tqdm
 from timeout_decorator import timeout  # Добавляем библиотеку timeout_decorator
 
@@ -21,7 +21,12 @@ class IPScanner:
 
     def scan_ip(self, ip_address):
         nm = nmap.PortScanner()
-        nm.scan(ip_address, arguments="-T4 -F")
+        try:
+            nm.scan(ip_address, arguments="-T4 -F")
+        except nmap.PortScannerError as e:
+            logging.error(
+                f"Ошибка при сканировании IP-адреса {ip_address}: {str(e)}")
+            return None
 
         result = {
             'ip_address': ip_address,
@@ -62,7 +67,8 @@ class IPScanner:
             logging.info(f"Сканирование IP-адреса: {ip}")
 
             result = self.scan_ip(ip)
-            self.results.append(result)
+            if result:
+                self.results.append(result)
 
         with open(self.output_file + '.json', 'w') as json_file:
             json.dump(self.results, json_file, indent=4)
@@ -88,7 +94,7 @@ def ssh_login(ip_address, username, password):
             f"Успешная авторизация SSH на {ip_address} с логином '{username}' и паролем '{password}'")
         return True
     except Exception as e:
-        logging.info(
+        logging.error(
             f"Не удалось авторизоваться SSH на {ip_address} с логином '{username}' и паролем '{password}': {str(e)}")
         return False
 
@@ -115,7 +121,7 @@ def rdp_login(ip_address, username, password):
         rdp.set_debug(True)
 
         if not rdp.connect():
-            logging.info(
+            logging.error(
                 f"Не удалось авторизоваться RDP на {ip_address} с логином '{username}' и паролем '{password}'")
             return False
 
@@ -124,7 +130,7 @@ def rdp_login(ip_address, username, password):
             f"Успешная авторизация RDP на {ip_address} с логином '{username}' и паролем '{password}'")
         return True
     except Exception as e:
-        logging.info(
+        logging.error(
             f"Не удалось авторизоваться RDP на {ip_address} с логином '{username}' и паролем '{password}': {str(e)}")
         return False
 
