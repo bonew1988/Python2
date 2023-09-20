@@ -8,7 +8,7 @@ import paramiko
 from tqdm import tqdm
 from timeout_decorator import timeout  # Добавляем библиотеку timeout_decorator
 
-logging.basicConfig(filename='1NEW_scan_log.log', level=logging.INFO,
+logging.basicConfig(filename='MY_log.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s: %(message)s')
 
 
@@ -99,42 +99,6 @@ def ssh_login(ip_address, username, password):
         return False
 
 
-@timeout(10)  # Установим тайм-аут в 10 секунд для авторизации
-def rdp_login(ip_address, username, password):
-    try:
-        rdp = FreeRDP()
-        rdp.set_hostname(ip_address)
-        rdp.set_username(username)
-        rdp.set_password(password)
-        rdp.set_domain("")
-        rdp.set_security(True)
-        rdp.set_ignore_certificate()
-        rdp.set_bpp(32)
-        rdp.set_console_audio(True)
-        rdp.set_redirect_microphone(True)
-        rdp.set_redirect_usb(True)
-        rdp.set_redirect_printer(True)
-        rdp.set_multimon(True)
-        rdp.set_resolution("1920x1080")
-        rdp.set_shell("explorer.exe")
-        rdp.set_port(3389)
-        rdp.set_debug(True)
-
-        if not rdp.connect():
-            logging.error(
-                f"Не удалось авторизоваться RDP на {ip_address} с логином '{username}' и паролем '{password}'")
-            return False
-
-        rdp.disconnect()
-        logging.info(
-            f"Успешная авторизация RDP на {ip_address} с логином '{username}' и паролем '{password}'")
-        return True
-    except Exception as e:
-        logging.error(
-            f"Не удалось авторизоваться RDP на {ip_address} с логином '{username}' и паролем '{password}': {str(e)}")
-        return False
-
-
 def main():
     logging.info("Начало работы программы")
 
@@ -165,10 +129,6 @@ def main():
             if ssh_login(ip_address, 'admin', 'admin'):
                 print(
                     f"Успешная авторизация SSH на {ip_address} с логином 'admin' и паролем 'admin'")
-        if 3389 in open_ports:
-            if rdp_login(ip_address, 'admin', 'admin'):
-                print(
-                    f"Успешная авторизация RDP на {ip_address} с логином 'admin' и паролем 'admin'")
 
     logging.info("Завершение работы программы")
 

@@ -1,35 +1,5 @@
 [
     {
-        "ip_address": "192.168.95.11",
-        "open_ports": [],
-        "services": {}
-    },
-    {
-        "ip_address": "192.168.95.12",
-        "open_ports": [],
-        "services": {}
-    },
-    {
-        "ip_address": "192.168.95.13",
-        "open_ports": [],
-        "services": {}
-    },
-    {
-        "ip_address": "192.168.95.14",
-        "open_ports": [],
-        "services": {}
-    },
-    {
-        "ip_address": "192.168.95.15",
-        "open_ports": [],
-        "services": {}
-    },
-    {
-        "ip_address": "192.168.95.16",
-        "open_ports": [],
-        "services": {}
-    },
-    {
         "ip_address": "192.168.95.17",
         "open_ports": [],
         "services": {}
@@ -52,8 +22,7 @@
             139,
             445,
             3389,
-            5357,
-            6000
+            5357
         ],
         "services": {
             "22": {
@@ -85,11 +54,6 @@
                 "name": "wsdapi",
                 "product": "",
                 "version": ""
-            },
-            "6000": {
-                "name": "X11",
-                "product": "",
-                "version": ""
             }
         }
     },
@@ -97,61 +61,5 @@
         "ip_address": "192.168.95.21",
         "open_ports": [],
         "services": {}
-    },
-    {
-        "ip_address": "192.168.95.22",
-        "open_ports": [
-            22
-        ],
-        "services": {
-            "22": {
-                "name": "ssh",
-                "product": "",
-                "version": ""
-            }
-        }
-    },
-    {
-        "ip_address": "192.168.95.23",
-        "open_ports": [
-            8008,
-            8009,
-            8443
-        ],
-        "services": {
-            "8008": {
-                "name": "http",
-                "product": "",
-                "version": ""
-            },
-            "8009": {
-                "name": "ajp13",
-                "product": "",
-                "version": ""
-            },
-            "8443": {
-                "name": "https-alt",
-                "product": "",
-                "version": ""
-            }
-        }
-    },
-    {
-        "ip_address": "192.168.95.24",
-        "open_ports": [],
-        "services": {}
-    },
-    {
-        "ip_address": "192.168.95.25",
-        "open_ports": [
-            3389
-        ],
-        "services": {
-            "3389": {
-                "name": "ms-wbt-server",
-                "product": "",
-                "version": ""
-            }
-        }
     }
 ]
